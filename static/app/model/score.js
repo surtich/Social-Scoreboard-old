@@ -1,0 +1,1 @@
+var ScoreItem = Backbone.Model.extend({});
