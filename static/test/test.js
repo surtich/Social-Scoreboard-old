@@ -1,0 +1,3 @@
+define(['./simpleScoreModel', './simpleScoreView'], function() {
+	
+});

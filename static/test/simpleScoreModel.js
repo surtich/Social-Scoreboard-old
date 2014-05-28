@@ -1,4 +1,4 @@
-(function() {
+define(['../app/model/score'], function(ScoreItem) {
 	
 	var scoreItem = new ScoreItem({
 		home: 37,
@@ -8,7 +8,9 @@
 	console.log(scoreItem.get('home'));
 	scoreItem.set({home: 52});
 	console.log(scoreItem.get('home'));
+	
+	return scoreItem;
 
-})();
+});
 
 			
