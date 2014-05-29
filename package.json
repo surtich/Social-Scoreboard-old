@@ -1,0 +1,26 @@
+{
+  "name": "Social-Scoreboard",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local-server": "PORT=3000 DEBUG=social-scoreboard* node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IGZJavierPerez/Social-Scoreboard.git"
+  },
+  "author": "IGZJavierPerez <surtich@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IGZJavierPerez/Social-Scoreboard/issues"
+  },
+  "homepage": "https://github.com/IGZJavierPerez/Social-Scoreboard",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-qunit": "^0.4.0"
+  }
+}
