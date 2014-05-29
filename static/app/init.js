@@ -1,11 +1,11 @@
 require.config({
-	baseUrl: '/',
+	baseUrl: './app',
 	paths: {
 		jquery: '../bower_components/jquery/dist/jquery.min',
 		underscore: '../bower_components/underscore/underscore',
 		backbone: '../bower_components/backbone/backbone',
 		marionette: '../bower_components/marionette/lib/backbone.marionette.min',
-		tpl: 'lib/tpl'
+		tpl: '../lib/tpl'
 	},
 	shim: {
 		backbone: {
@@ -20,7 +20,7 @@ require.config({
 });
 
 require([
-	'../app/main'
+	'./main'
 ], function(app) {
 	'use strict';
 
