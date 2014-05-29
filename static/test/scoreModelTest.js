@@ -3,6 +3,14 @@ define(['../app/model/score'], function(ScoreItem) {
 	var run = function() {
 
 		module('Score Model tests');
+		
+		QUnit.test('Check empty score', function() {
+
+			var scoreItem = new ScoreItem({});
+
+			QUnit.equal(scoreItem.get('home'), 0, 'The home team score should be 0.');
+			QUnit.equal(scoreItem.get('guest'), 0, 'The guest team score should be 0.');
+		});
 
 		QUnit.test('Check the team scores', function() {
 
