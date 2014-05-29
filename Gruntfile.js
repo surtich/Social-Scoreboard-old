@@ -37,16 +37,24 @@ module.exports = function(grunt) {
 				}
 			  }
 			}
-		}
+		},
+		run: {
+			commands: {
+				exec: 'npm run-script local-server'
+			}
+  }
 	});
 	
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-qunit');
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
+	grunt.loadNpmTasks('grunt-run');
 	
 	grunt.registerTask('default', ['jshint', 'qunit']);
 	
 	
 	grunt.registerTask('dist', ['jshint', 'qunit', 'requirejs']);
+	
+	grunt.registerTask('server', ['jshint', 'qunit', 'run']);
 
 };
