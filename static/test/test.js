@@ -13,10 +13,10 @@ require.config({
 	}
 });
 require(
-		['./scoreModelTest'],
-		function(scoreModelTest) {
+		['./valueTest'],
+		function(valueTest) {
 			// run the tests.
-			scoreModelTest.run();
+			valueTest.run();
 			
 			// start QUnit.
 			QUnit.load();

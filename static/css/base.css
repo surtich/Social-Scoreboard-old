@@ -1,4 +1,84 @@
 html { 
-background: url(../img/bg.jpg) no-repeat center center fixed; 
-background-size: cover;
+	background: url(../img/bg.jpg) no-repeat center center fixed; 
+	background-size: cover;
+}
+
+.score {
+	font-size: 2em;
+}
+
+.score .points {
+	color: #e5c953;
+}
+
+.console .button a:link, .console .button a:visited {
+	display: block;
+	text-decoration: none;
+	background-color: #cc0000;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#cc3737), to(#663737));
+	background-image: -webkit-linear-gradient(top, #cc3737, #663737); 
+	background-image: -moz-linear-gradient(top, #cc3737, #663737); 
+	background-image: -ms-linear-gradient(top, #cc3737, #663737); 
+	background-image: -o-linear-gradient(top, #cc3737, #663737); 
+	color: #a7a7a7;
+	font-size: 2em;
+	font-weight:bold;
+	margin: 36px;
+	width: 80px;
+	height: 80px;
+	position: relative;
+	text-align: center;
+	line-height: 80px;
+	border-radius: 50%;
+	box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+	border: solid 1px transparent;
+}
+
+.console .button a:before {
+	content: "";
+	display: block;
+	background: #8a;
+	border-top: 2px solid #ddd;
+	position: absolute;
+	top: -18px;
+	left: -18px;
+	bottom: -18px;
+	right: -18px;
+	z-index: -1;
+	border-radius: 50%;
+	box-shadow: inset 0px 8px 48px #ddd;
+}
+
+.console .button a:active {
+	box-shadow: 0px 3px 4px #aaa inset, 0px 2px 3px #fff;
+}
+
+.console .button a:hover {
+	text-decoration: none;
+	color: #555;
+	background: #bb4444;
+}​
+
+
+
+.circle-text {
+    width:85%;
+}
+.circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    background: #CC0000; 
+    border-radius: 50%;
+}
+.circle-text div {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
 }
